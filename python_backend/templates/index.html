@@ -1,0 +1,36 @@
+<!-- Accept a user input using forms and display on the console -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css" media="screen">
+    .green {
+      background-color: Green;
+    }
+    .red {
+      background-color: Red;
+    }
+  </style>
+  <title> Smart Light Control </title>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      var socket = io.connect("http://localhost:5000");
+      socket.on('connect', function() {
+      console.log("Connected");
+      });
+      $("#button").click(function () {
+        $(this).toggleClass('green');
+        console.log("button function");
+        socket.emit('my event', "Pressed");
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="button" type="submit">Bulb</button>  
+</body>
+</html>
+
+
