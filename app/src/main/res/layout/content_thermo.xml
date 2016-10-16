@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ankit.homify.ThermoActivity"
+    tools:showIn="@layout/activity_thermo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/increase_temp"
+        android:id="@+id/temp_incr"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/temp_text_size"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/target_temp"
+        android:id="@+id/temp_target"
+        android:textSize="@dimen/temp_text_size"
+        android:layout_below="@+id/temp_incr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decrease_temp"
+        android:id="@+id/temp_decr"
+        android:layout_marginTop="46dp"
+        android:textSize="@dimen/temp_text_size"
+        android:layout_below="@+id/temp_target"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/off"
+        android:id="@+id/away_set"
+        android:textSize="@dimen/temp_text_size"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/curr"
+        android:layout_alignEnd="@+id/curr" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_off"
+        android:checked="false"
+        android:layout_alignBottom="@+id/away_set"
+        android:layout_toRightOf="@+id/temp_target"
+        android:layout_toEndOf="@+id/temp_target" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current"
+        android:id="@+id/curr"
+        android:textSize="@dimen/temp_text_size"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/away_set"
+        android:layout_toLeftOf="@+id/temp_target"
+        android:layout_toStartOf="@+id/temp_target" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/curr_temp"
+        android:id="@+id/temp_curr"
+        android:layout_alignBottom="@+id/curr"
+        android:layout_alignTop="@+id/curr"
+        android:layout_alignLeft="@+id/set_off"
+        android:layout_alignStart="@+id/set_off"
+        android:textSize="@dimen/temp_text_size"/>
+</RelativeLayout>

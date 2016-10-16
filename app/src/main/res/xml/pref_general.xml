@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:title="@string/pref_title_high"
+        android:key="@string/pref_key_high"
+        android:defaultValue="@string/pref_default_high"
+        android:inputType="number"
+        android:singleLine="true">
+    </EditTextPreference>
+
+    <EditTextPreference
+        android:title="@string/pref_title_low"
+        android:key="@string/pref_key_low"
+        android:defaultValue="@string/pref_defaule_low"
+        android:inputType="number"
+        android:singleLine="true">
+    </EditTextPreference>
+</PreferenceScreen>

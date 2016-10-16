@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ankit.homify.LightActivityFragment"
+    tools:showIn="@layout/activity_light">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tile1"
+        android:id="@+id/light1"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/romantic1"
+        android:layout_alignStart="@+id/romantic1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/normal"
+        android:id="@+id/normal1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/light1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/romantic"
+        android:id="@+id/romantic1"
+        android:layout_alignTop="@+id/normal1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/party"
+        android:id="@+id/party1"
+        android:layout_alignTop="@+id/romantic1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/normal"
+        android:id="@+id/normal2"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/light2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/romantic"
+        android:id="@+id/romantic2"
+        android:layout_alignTop="@+id/normal2"
+        android:layout_alignLeft="@+id/romantic1"
+        android:layout_alignStart="@+id/romantic1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/party"
+        android:id="@+id/party2"
+        android:layout_alignTop="@+id/romantic2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tile2"
+        android:id="@+id/light2"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/romantic2"
+        android:layout_alignEnd="@+id/romantic2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apocalypse"
+        android:id="@+id/terror"
+        android:layout_below="@+id/romantic2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="#bf0707" />
+
+</RelativeLayout>

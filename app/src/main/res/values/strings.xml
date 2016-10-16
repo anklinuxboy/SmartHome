@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Homify</string>
+    <string name="action_settings">Settings</string>
+    /*
+    * Buttons on Main activity
+    */
+    <string name="light">Light</string>
+    <string name="thermo">Thermostat</string>
+
+    /*
+    * Buttons on Light activity
+    */
+    <string name="tile1">Tile1OFF</string>
+    <string name="tile2">Tile2OFF</string>
+    <string name="normal">Normal</string>
+    <string name="romantic">Romantic</string>
+    <string name="party">Party</string>
+    <string name="title_activity_light">LightActivity</string>
+    <string name="title_activity_thermo">ThermoActivity</string>
+
+    <string name="curr_temp">Temp:</string>
+    <string name="decrease_temp">-</string>
+    <string name="increase_temp">+</string>
+    <string name="off">OFF</string>
+    <string name="target_temp">Temp:</string>
+    <string name="current">Current</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="pref_title_high">High Temperature</string>
+    <string name="pref_key_high" translatable="false">high</string>
+    <string name="pref_default_high" translatable="false">80</string>
+
+    <string name="pref_title_low">Low Temperature</string>
+    <string name="pref_key_low" translatable="false">low</string>
+    <string name="pref_defaule_low" translatable="false">60</string>
+
+    <string name="apocalypse">Apocalypse</string>
+</resources>
