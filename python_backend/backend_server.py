@@ -16,7 +16,7 @@ socketio = SocketIO(app)
 
 # Connect to arduino
 def connect_tile1(message):
-  HOST = '192.168.1.114'
+  HOST = '192.000.0.000'
   PORT = 8080
   client_socket = socket(AF_INET, SOCK_STREAM)
   client_socket.connect((HOST, PORT))
@@ -25,7 +25,7 @@ def connect_tile1(message):
 
 # Connect to Tile2
 def connect_tile2(message):
-  HOST = '192.168.1.115'
+  HOST = '192.000.1.000'
   PORT = 8080
   client_socket = socket(AF_INET, SOCK_STREAM)
   client_socket.connect((HOST, PORT))
@@ -40,7 +40,6 @@ def index():
 #  recieve client input
 @socketio.on('my event')
 def handle_message(message):
-  print "Recieved Message: %s" % message
   if message == "1" or message == "3" or message == "4" or message == "5":
     print "Sending to arduino"
     connect_tile1(message)
