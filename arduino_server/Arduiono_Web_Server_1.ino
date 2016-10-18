@@ -26,11 +26,11 @@ int led5 = 11;
 // Enter a MAC address and IP address for your controller below.
 // The IP address will be dependent on your local network:
 byte mac[] = {
-  0X90, 0xA2, 0xDA, 0x0E, 0x9D, 0x24
+  //0X90, 0x00, 0x00, 0x00, 0x00, 0x00
 };
-byte ip[] = {192, 168, 1, 114};
+byte ip[] = {192, 168, 0, 000};
 
-byte gateway[] = {192, 168, 1, 1};
+byte gateway[] = {192, 168, 0, 0};
 
 byte subnet[] = {255, 255, 255, 0};
 
