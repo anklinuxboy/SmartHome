@@ -26,13 +26,13 @@ int led5 = 11;
 // Enter a MAC address and IP address for your controller below.
 // The IP address will be dependent on your local network:
 byte mac[] = {
-  0X90, 0xA2, 0xDA, 0x0F, 0x25, 0xB3
+  //0X00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
-byte ip[] = {192, 168, 1, 115};
+byte ip[] = {192, 000, 0, 000}; // Enter your ip here
 
-byte gateway[] = {192, 168, 1, 1};
+byte gateway[] = {192, 000, 0, 0}; // Enter your ip here
 
-byte subnet[] = {255, 255, 255, 0};
+byte subnet[] = {255, 0, 0, 0}; // Enter your ip here
 
 // Initialize the Ethernet server library
 // with the IP address and port you want to use
